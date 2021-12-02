@@ -805,7 +805,7 @@
 					else if(h>13)tulis('siang','jangan lupa makan')
 					else if(h>9)tulis('siang','selamat beraktivitas')
 					else if(h>4)tulis('pagi','semoga harimu menyenangkan');
-					else tulis('malam','jangan begadang mulu');
+					else tulis('malam','malam','jangan begadang mulu');
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
@@ -863,7 +863,7 @@
 			}
 			function mytanggal(){
 				var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
+				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 				var d = new Date();
 				var dayName = hari[d.getDay()];
 				var monthName = bulan[d.getMonth()];
