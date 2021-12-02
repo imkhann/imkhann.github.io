@@ -306,7 +306,7 @@
 	  		cursor: pointer;
 	  	}
 	  	.ucapan::before{
-	  		content: 'coba diklik';
+            content: 'coba diklik';
 	  		font-size: 12pt;
 	  		width: 200px;
 	  		height: 50px;
@@ -445,11 +445,11 @@
 			</div>
 			<div class="mywindow" id="myform" style="width: 500px; height: 240px">
 				<div class="myheader">
-					Welcome
+					Registrasi
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Isi nama kamu terlebih dahulu
+						Isi identitas anda terlebih dahulu
 					</div>
 					<div class="mycontent">
 						Tekan tombol merah untuk reset nama.<br><br>
@@ -468,7 +468,7 @@
 					<div class="mymax"></div>
 				</div>
 				<div class="myheader" id="mywindowheader">
-					Halo <span id="spannama"> :)</span>
+					halo <span id="spannama"></span>
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
@@ -798,14 +798,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('malam','have a nice dream'');
-					else if(h>19)tulis('malam','selamat beristirahat');
-					else if(h>18)tulis('petang','jangan lupa istirahat');
-					else if(h>14)tulis('sore','tetap semangat yaa');
-					else if(h>13)tulis('siang','jangan lupa makan')
-					else if(h>9)tulis('siang','selamat beraktivitas')
-					else if(h>4)tulis('pagi','semoga harimu menyenangkan');
-					else tulis('malam','jangan begadang mulu');
+					if(h>23)tulis('malam','have a nice dream');
+				else if(h>19)tulis('malam','selamat beristirahat');
+				else if(h>18)tulis('petang','jangan lupa istirahat');
+				else if(h>14)tulis('sore','tetap semangat yaa');
+				else if(h>13)tulis('siang','jangan lupa makan')
+				else if(h>9)tulis('siang','selamat beraktivitas')
+				else if(h>4)tulis('pagi','semoga harimu menyenangkan');
+				else tulis('malam','jangan begadang mulu');
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
