@@ -306,7 +306,7 @@
 	  		cursor: pointer;
 	  	}
 	  	.ucapan::before{
-	  		content: 'coba diklik';
+	  		content: 'ketuk untuk mencari';
 	  		font-size: 12pt;
 	  		width: 200px;
 	  		height: 50px;
@@ -350,7 +350,7 @@
 	  		cursor: default;
 	  	}
 	  	#nama::before{
-	  		content: 'klik untuk mengubah';
+	  		content: 'ketuk untuk mengubah';
 	  		width: 200px;
 	  		height: 50px;
 	  		line-height: 50px;
@@ -445,11 +445,11 @@
 			</div>
 			<div class="mywindow" id="myform" style="width: 500px; height: 240px">
 				<div class="myheader">
-					Welcome
+					Registrasi
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Isi nama kamu terlebih dahulu
+						Isi identitas anda terlebih dahulu
 					</div>
 					<div class="mycontent">
 						Tekan tombol merah untuk reset nama.<br><br>
@@ -468,14 +468,14 @@
 					<div class="mymax"></div>
 				</div>
 				<div class="myheader" id="mywindowheader">
-					Halo <span id="spannama"> :)</span>
+					halo <span id="spannama"></span>
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						I just want to tell you.
+						Aku sejak lama suka padamu.
 					</div>
 					<div class="mycontent">
-						Terima kasih telah menjadi teman cerita, pendengar, sekaligus moodku waktu itu. Maaf, mungkin aku tidak bisa seperti yang kamu pikirkan. Tapi kita masih teman kan?
+						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah, yang selalu ada sampai akhir hayatku?
 					</div>
 					<div class="mybutton">
 						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >tidak</div>
@@ -758,14 +758,14 @@
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
-				if(h>23)tulis('malam','have a nice dream');
-				else if(h>19)tulis('malam','selamat beristirahat');
-				else if(h>18)tulis('petang','jangan lupa istirahat');
-				else if(h>14)tulis('sore','tetap semangat yaa');
-				else if(h>13)tulis('siang','jangan lupa makan')
-				else if(h>9)tulis('siang','selamat beraktivitas')
-				else if(h>4)tulis('pagi','semoga harimu menyenangkan');
-				else tulis('malam','jangan begadang mulu');
+				if(h>23)tulis('malam','seharusnya kamu sudah tidur');
+				else if(h>19)tulis('malam','waktunya mengisi energi');
+				else if(h>18)tulis('petang','selamat menikmati senja');
+				else if(h>14)tulis('sore','selamat menjalani hari');
+				else if(h>13)tulis('siang','tetap semangat')
+				else if(h>9)tulis('siang','selamat bekerja')
+				else if(h>4)tulis('pagi','selamat beraktivitas');
+				else tulis('malam','seharusnya kamu sudah tidur');
 				selesai=true;
 			}
 			function resetposisi(){
@@ -798,14 +798,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('malam','have a nice dream'');
-					else if(h>18)tulis('malam','selamat beristirahat');
-					else if(h>17)tulis('petang','jangan lupa istirahat');
-					else if(h>14)tulis('sore','tetap semangat yaa');
-					else if(h>13)tulis('siang','jangan lupa makan')
-					else if(h>9)tulis('siang','selamat beraktivitas')
-					else if(h>4)tulis('pagi','semoga harimu menyenangkan');
-					else tulis('malam','jangan begadang mulu');
+					if(h>23)tulis('malam','seharusnya kamu sudah tidur');
+					else if(h>18)tulis('malam','waktunya mengisi energi');
+					else if(h>17)tulis('petang','selamat menikmati senja');
+					else if(h>14)tulis('sore','selamat menjalani hari');
+					else if(h>13)tulis('siang','tetap semangat')
+					else if(h>9)tulis('siang','selamat bekerja')
+					else if(h>4)tulis('pagi','selamat beraktivitas');
+					else tulis('malam','seharusnya kamu sudah tidur');
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
@@ -863,7 +863,7 @@
 			}
 			function mytanggal(){
 				var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
 				var d = new Date();
 				var dayName = hari[d.getDay()];
 				var monthName = bulan[d.getMonth()];
