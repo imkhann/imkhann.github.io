@@ -728,18 +728,10 @@
 				if (cari){
 					cari=false;
 					selesai=false;
-					window.open("https://imkhann.github.io/kamu/");
-				}
-				if(selesai){
-					cari=true;
-				}
-			}
-			function cariok(){
-				window.open("https://imkhann.github.io/kamu/");
-				caribatal();
-			}
-			function caribatal(){
-				$('.ucapan *').remove();
+					$('.ucapan').text('');
+					$('.ucapan *').remove();
+                    window.open("https://imkhann.github.io/kamu/");
+					$('.ucapan *').remove();
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
@@ -752,6 +744,10 @@
 				else if(h>4)tulis('pagi','semoga harimu menyenangkan');
 				else tulis('malam','jangan begadang mulu');
 				selesai=true;
+				}
+				if(selesai){
+					cari=true;
+				}
 			}
 			function resetposisi(){
 				mywindow.style.top = "calc(50% - "+mywindow.clientHeight/2+"px)";
